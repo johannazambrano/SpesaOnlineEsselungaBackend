@@ -1,4 +1,4 @@
-package com.esselunga.spese;
+package com.esselunga.spese.repository;
 
 
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("api/**")
+        registry.addMapping("/**")
                 .allowedOrigins("http://localhost:3000")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*");

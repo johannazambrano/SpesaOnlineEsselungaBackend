@@ -10,10 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 import java.util.List;
-//import org.springframework.web.bind.annotation.CrossOrigin;
-//@CrossOrigin(origins = "http://localhost:3000")
+import org.springframework.web.bind.annotation.CrossOrigin;
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/api/spese")
+@RequestMapping("api/spese")
 public class SpesaController {
 
     @Autowired

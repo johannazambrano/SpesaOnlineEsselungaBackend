@@ -1,4 +1,4 @@
-package com.esselunga.spese;
+package com.esselunga.spese.repository;
 
 import com.esselunga.spese.model.Magazzino;
 import com.esselunga.spese.model.Spesa;
